@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservations Form</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+        }
+
+        .form-box {
+            width: 330px;
+            border: 1px solid red;
+            padding: 8px;
+            margin: 20px;
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            font-size: 20px;
+        }
+
+        .row {
+            margin-bottom: 4px;
+        }
+
+        label {
+            display: inline-block;
+            width: 95px;
+        }
+
+        input, select, textarea {
+            width: 135px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 180px;
+            height: 45px;
+            vertical-align: top;
+        }
+
+        .buttons {
+            margin-top: 5px;
+        }
+
+        .buttons input {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h2>Reservations Form</h2>
+
+        <form>
+
+            <div class="row">
+                <label>First Name:</label>
+                <input type="text" name="firstName">
+            </div>
+
+            <div class="row">
+                <label>Last Name:</label>
+                <input type="text" name="lastName">
+            </div>
+
+            <b>Address</b>
+
+            <div class="row">
+                <label>Number & Street:</label>
+                <input type="text" name="street">
+            </div>
+
+            <div class="row">
+                <label>City:</label>
+                <input type="text" name="city">
+            </div>
+
+            <div class="row">
+                <label>State:</label>
+                <input type="text" name="state">
+            </div>
+
+            <div class="row">
+                <label>Zip Code:</label>
+                <input type="text" name="zip">
+            </div>
+
+            <div class="row">
+                <label>Check-in Date:</label>
+                <input type="date" name="checkin">
+            </div>
+
+            <div class="row">
+                <label>Check-out Date:</label>
+                <input type="date" name="checkout">
+            </div>
+
+            <div class="row">
+                <label>Phone:</label>
+                <input type="tel" name="phone" placeholder="(###) ###-####">
+            </div>
+
+            <div class="row">
+                <label>E-mail Address:</label>
+                <input type="email" name="email" placeholder="name@domain.com">
+            </div>
+
+            <div class="row">
+                <label>Payment Method:</label>
+                <input type="text" name="payment">
+            </div>
+
+            <div class="row">
+                <label>Card Number:</label>
+                <input type="text" name="card">
+            </div>
+
+            <div class="row">
+                <label><b>Special Requests:</b></label>
+                <textarea name="requests" placeholder="Enter your request here"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
